@@ -1,0 +1,17 @@
+print("Enter charge values")
+charge1=input("Charge 1: ")
+charge2=input("Charge 2: ")
+
+print("Enter charge positions")
+position1=int(input("Charge 1 position: "))
+position2=int(input("Charge 2 position: "))
+
+
+try:
+    Force = (((8.99 * (10**9))*(charge1)*(charge2)))/((position1-position2)**2)
+    print("Force generated is: " , Force)
+
+except:
+    print("These charges are at the same position!")
+
+
